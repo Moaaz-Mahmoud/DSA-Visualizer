@@ -20,12 +20,12 @@
                                 <Font size="11.0" />
                             </font>
                         </Button>
-                        <Button fx:id="StackBtn" layoutX="105.0" layoutY="54.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="77.0" text="Stack">
+                        <Button fx:id="StackBtn" layoutX="105.0" layoutY="54.0" mnemonicParsing="false" onAction="#switchToStackPage" prefHeight="38.0" prefWidth="77.0" text="Stack">
                             <font>
                                 <Font size="11.0" />
                             </font>
                         </Button>
-                        <Button fx:id="QueueBtn" layoutX="194.0" layoutY="54.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="77.0" text="Queue">
+                        <Button fx:id="QueueBtn" layoutX="194.0" layoutY="54.0" mnemonicParsing="false" onAction="#switchToQueuePage" prefHeight="38.0" prefWidth="77.0" text="Queue">
                             <font>
                                 <Font size="11.0" />
                             </font>
@@ -34,17 +34,17 @@
                 </Pane>
                 <Pane layoutY="100.0" prefHeight="100.0" prefWidth="285.0">
                     <children>
-                        <Button fx:id="BSTBtn" layoutX="11.0" layoutY="8.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="77.0" text="BST">
+                        <Button fx:id="BSTBtn" layoutX="11.0" layoutY="8.0" mnemonicParsing="false" onAction="#switchToBSTPage" prefHeight="38.0" prefWidth="77.0" text="BST">
                             <font>
                                 <Font size="11.0" />
                             </font>
                         </Button>
-                        <Button fx:id="HeapBtn" layoutX="105.0" layoutY="8.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="77.0" text="Heap">
+                        <Button fx:id="HeapBtn" layoutX="105.0" layoutY="8.0" mnemonicParsing="false" onAction="#switchToHeapPage" prefHeight="38.0" prefWidth="77.0" text="Heap">
                             <font>
                                 <Font size="11.0" />
                             </font>
                         </Button>
-                        <Button fx:id="HashTableBtn" layoutX="194.0" layoutY="8.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="77.0" text="Hash Table">
+                        <Button fx:id="HashTableBtn" layoutX="194.0" layoutY="8.0" mnemonicParsing="false" onAction="#switchToHashTablePage" prefHeight="38.0" prefWidth="77.0" text="Hash Table">
                             <font>
                                 <Font size="11.0" />
                             </font>

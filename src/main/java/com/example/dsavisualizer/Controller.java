@@ -26,9 +26,15 @@ public class Controller {
         stage.setScene(scene);
         stage.show();
     }
+    @FXML
+    public void switchToHomePage(ActionEvent event) throws IOException {
+        switchPage(event, "home-page.fxml");
+    }
+    @FXML
     public void switchToLinkedListPage(ActionEvent event) throws IOException {
         switchPage(event, "linked-list-page.fxml");
     }
+    @FXML
     public void switchToStackPage(ActionEvent event) throws IOException {
         switchPage(event, "stack-page.fxml");
     }
@@ -52,18 +58,4 @@ public class Controller {
     @FXML
     protected void onHelloButtonClick() {}
 
-    /*
-     */
-    @FXML
-    protected void onLinkedListBtnClick(){
-
-    }
-    @FXML
-    protected void onStackBtnClick(){
-
-    }
-    @FXML
-    protected void onQueueBtnClick(){
-
-    }
 }
