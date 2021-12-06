@@ -1,5 +1,5 @@
 package com.example.dsavisualizer;
 
-public class QueuePage {
+public class QueuePage extends Controller{
 
 }

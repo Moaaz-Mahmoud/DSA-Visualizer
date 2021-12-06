@@ -1,5 +1,5 @@
 package com.example.dsavisualizer;
 
-public class StackPage {
+public class StackPage extends Controller{
 
 }

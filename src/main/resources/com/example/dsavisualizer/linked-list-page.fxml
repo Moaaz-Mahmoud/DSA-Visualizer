@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Rectangle?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dsavisualizer.LinkedListPage">
    <children>
       <Pane prefHeight="140.0" prefWidth="606.0">
          <children>
@@ -35,6 +34,9 @@
             <Label layoutX="491.0" layoutY="72.0" text="Label" />
          </children>
       </Pane>
-      <Pane layoutY="300.0" prefHeight="100.0" prefWidth="606.0" />
+      <Pane layoutY="300.0" prefHeight="100.0" prefWidth="606.0">
+         <children>
+            <Button layoutX="551.0" layoutY="61.0" mnemonicParsing="false" onAction="#switchToHomePage" text="Back" />
+         </children></Pane>
    </children>
 </Pane>

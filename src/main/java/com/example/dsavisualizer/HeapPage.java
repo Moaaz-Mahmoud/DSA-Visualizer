@@ -1,5 +1,5 @@
 package com.example.dsavisualizer;
 
-public class HeapPage {
+public class HeapPage extends Controller{
 
 }

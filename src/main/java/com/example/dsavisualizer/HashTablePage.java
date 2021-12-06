@@ -1,4 +1,5 @@
 package com.example.dsavisualizer;
 
-public class HashTablePage {
+public class HashTablePage extends Controller{
+
 }
