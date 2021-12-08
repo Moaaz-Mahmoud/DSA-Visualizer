@@ -11,6 +11,7 @@ public class Application extends javafx.application.Application {
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("DSA Visualizer");
         stage.setScene(scene);
+
         stage.show();
     }
 
