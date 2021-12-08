@@ -27,6 +27,11 @@ public class StackPage extends Controller{
         labels[stk.size()].setText(stringToPush);
         stk.push(stringToPush);
     }
+    public void onPopButtonClick(){
+        if(stk.size() == 0) return;
+        labels[stk.size()-1].setText("");
+        stk.pop();
+    }
 
     //Other essential methods
     public void initialize(){
