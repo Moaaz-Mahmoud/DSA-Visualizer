@@ -35,7 +35,7 @@ public class QueuePage extends Controller{
             labels[0].setText("");
         }
         else {
-            for (int i = 0; i < queue.size(); i++)
+            for (int i = 0; i < queue.size()-1; i++)
                 labels[i].setText(labels[i + 1].getText());
             labels[queue.size()-1].setText("");
         }
