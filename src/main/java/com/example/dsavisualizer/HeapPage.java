@@ -5,14 +5,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-import java.util.Stack;
-
 public class HeapPage extends Controller{
     //Constants
     private final int MAX_SIZE = 7;
-
-    //Structures
-    private Heap heap = new Heap();
     //Layout components
     @FXML TextField textField;
     @FXML Button addButton;
@@ -21,8 +16,9 @@ public class HeapPage extends Controller{
         @FXML Label label0; @FXML Label label1; @FXML Label label2;
         @FXML Label label3; @FXML Label label4; @FXML Label label5;
         @FXML Label label6;
+    //Structures
+    private Heap heap = new Heap();
     private Label[] labels = new Label[]{ label0, label1, label2, label3, label4, label5, label6 };
-
     //Utility methods
     public void render(){
         int[] elements = heap.getArray();

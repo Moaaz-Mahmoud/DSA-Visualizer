@@ -5,6 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dsavisualizer.QueuePage">
@@ -19,19 +20,46 @@
                <font>
                   <Font size="16.0" />
                </font></Label>
-            <Button fx:id="addButton" layoutX="120.0" layoutY="47.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="140.0" text="Add">
+            <Button fx:id="addButton" layoutX="120.0" layoutY="47.0" mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="58.0" prefWidth="140.0" text="Add">
                <font>
                   <Font size="16.0" />
                </font></Button>
-            <Button fx:id="removeButton" layoutX="300.0" layoutY="47.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="140.0" text="Remove">
+            <Button fx:id="removeButton" layoutX="300.0" layoutY="47.0" mnemonicParsing="false" onAction="#onRemoveButtonClick" prefHeight="58.0" prefWidth="140.0" text="Remove">
                <font>
                   <Font size="16.0" />
                </font></Button>
          </children>
       </Pane>
-      <Pane layoutY="140.0" prefHeight="240.0" prefWidth="600.0" >
-              
-      </Pane>
+      <Pane layoutY="140.0" prefHeight="240.0" prefWidth="600.0">
+         <children>
+            <Line endX="360.0" endY="1.52587890625E-5" layoutX="160.0" layoutY="80.0" startX="-100.0" />
+            <Line endX="360.0" endY="1.52587890625E-5" layoutX="160.0" layoutY="160.0" startX="-100.0" />
+            <Label fx:id="label0" layoutX="480.0" layoutY="110.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label1" layoutX="380.0" layoutY="110.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label2" layoutX="280.0" layoutY="110.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label3" layoutX="180.0" layoutY="110.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label4" layoutX="80.0" layoutY="110.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children></Pane>
       <Pane layoutY="380.0" prefHeight="40.0" prefWidth="600.0">
          <children>
             <Button layoutX="545.0" layoutY="8.0" mnemonicParsing="false" onAction="#switchToHomePage" text="Back" />
