@@ -18,7 +18,7 @@ public class Heap {
         if(idx == 0) return;
         int parentIdx = (idx-1)/2;
         if(data[parentIdx] < data[idx]){
-            swap(data[idx], data[parentIdx]);
+            int temp = data[idx]; data[idx] = data[parentIdx]; data[parentIdx] = temp;
             upwardRebuild(parentIdx);
         }
     }
@@ -26,12 +26,12 @@ public class Heap {
         int leftChildIdx = idx*2+1, rightChildIdx = idx*2+2;
         if(leftChildIdx >= size) return;
         if(data[idx] < data[idx*2+1]) {
-            swap(data[idx], data[leftChildIdx]);
+            int temp = data[idx]; data[idx] = data[leftChildIdx]; data[leftChildIdx] = temp;
             downwardRebuild(leftChildIdx);
         }
         if(rightChildIdx >= size) return;
         if(data[idx] < data[rightChildIdx]){
-            swap(data[idx], data[rightChildIdx]);
+            int temp = data[idx]; data[idx] = data[rightChildIdx]; data[rightChildIdx] = temp;
             downwardRebuild(rightChildIdx);
         }
     }

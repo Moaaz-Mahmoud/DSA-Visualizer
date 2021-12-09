@@ -12,20 +12,21 @@
          <children>
             <TextField fx:id="textField" layoutX="14.0" layoutY="58.0" prefWidth="81.0" />
             <Label layoutX="14.0" layoutY="35.0" text="Value" />
-            <Button fx:id="addButton" layoutX="122.0" layoutY="14.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="210.0" text="Add" />
-            <Button fx:id="removeButton" layoutX="343.0" layoutY="14.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="210.0" text="Remove" />
+            <Button fx:id="addButton" layoutX="122.0" layoutY="14.0" mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="105.0" prefWidth="210.0" text="Add" />
+            <Button fx:id="removeButton" layoutX="343.0" layoutY="14.0" mnemonicParsing="false" onAction="#onRemoveButtonClick" prefHeight="105.0" prefWidth="210.0" text="Remove" />
          </children>
       </Pane>
       <Pane layoutY="140.0" prefHeight="240.0" prefWidth="600.0">
          <children>
-            <Label layoutX="286.0" layoutY="15.0" />
-            <Label layoutX="186.0" layoutY="55.0" />
-            <Label layoutX="386.0" layoutY="55.0" />
-            <Label layoutX="136.0" layoutY="95.0" />
-            <Label layoutX="226.0" layoutY="95.0" />
-            <Label layoutX="326.0" layoutY="95.0" />
-            <Label layoutX="426.0" layoutY="95.0" />
-         </children></Pane>
+            <Label fx:id="label0" layoutX="286.0" layoutY="15.0" />
+            <Label fx:id="label1" layoutX="186.0" layoutY="55.0" />
+            <Label fx:id="label2" layoutX="386.0" layoutY="55.0" />
+            <Label fx:id="label3" layoutX="136.0" layoutY="95.0" />
+            <Label fx:id="label4" layoutX="226.0" layoutY="95.0" />
+            <Label fx:id="label5" layoutX="326.0" layoutY="95.0" />
+            <Label fx:id="label6" layoutX="426.0" layoutY="95.0" />
+         </children>
+      </Pane>
       <Pane layoutY="380.0" prefHeight="40.0" prefWidth="600.0">
          <children>
             <Button layoutX="545.0" layoutY="8.0" mnemonicParsing="false" onAction="#switchToHomePage" text="Back" />

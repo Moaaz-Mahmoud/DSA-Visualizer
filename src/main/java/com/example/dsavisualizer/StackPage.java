@@ -15,7 +15,7 @@ public class StackPage extends Controller{
         @FXML Label label3; @FXML Label label4;
     private Label[] labels = { label0, label1, label2, label3, label4 };
 
-    //Components (other than labels)
+    //Layout components (other than labels)
     @FXML TextField textField;
     @FXML Button pushButton;
     @FXML Button popButton;
