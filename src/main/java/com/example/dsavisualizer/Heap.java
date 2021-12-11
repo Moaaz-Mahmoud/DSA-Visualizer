@@ -48,6 +48,7 @@ public class Heap {
         size--;
         downwardRebuild(0);
     }
+    public int getSize(){return size;}
     //Useful for visualization
     public int[] getArray(){
         int[] arr = new int[size];

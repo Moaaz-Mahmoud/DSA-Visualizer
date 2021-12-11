@@ -5,6 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dsavisualizer.HeapPage">
@@ -43,22 +44,29 @@
                <font>
                   <Font size="16.0" />
                </font></Label>
-            <Label fx:id="label3" layoutX="136.0" layoutY="95.0">
+            <Label fx:id="label3" layoutX="136.0" layoutY="105.0">
                <font>
                   <Font size="16.0" />
                </font></Label>
-            <Label fx:id="label4" layoutX="236.0" layoutY="95.0">
+            <Label fx:id="label4" layoutX="236.0" layoutY="105.0">
                <font>
                   <Font size="16.0" />
                </font></Label>
-            <Label fx:id="label5" layoutX="336.0" layoutY="95.0">
+            <Label fx:id="label5" layoutX="336.0" layoutY="105.0">
                <font>
                   <Font size="16.0" />
                </font></Label>
-            <Label fx:id="label6" layoutX="436.0" layoutY="95.0">
+            <Label fx:id="label6" layoutX="436.0" layoutY="105.0">
                <font>
                   <Font size="16.0" />
                </font></Label>
+            <Circle fx:id="circle0" fill="#ff1f1f00" layoutX="291.0" layoutY="30.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+            <Circle fx:id="circle1" fill="#ff1f1f00" layoutX="190.0" layoutY="68.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+            <Circle fx:id="circle2" fill="#ff1f1f00" layoutX="390.0" layoutY="68.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+            <Circle fx:id="circle3" fill="#ff1f1f00" layoutX="140.0" layoutY="118.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+            <Circle fx:id="circle4" fill="#ff1f1f00" layoutX="240.0" layoutY="118.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+            <Circle fx:id="circle5" fill="#ff1f1f00" layoutX="340.0" layoutY="118.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+            <Circle fx:id="circle6" fill="#ff1f1f00" layoutX="440.0" layoutY="118.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
          </children>
       </Pane>
       <Pane layoutY="380.0" prefHeight="40.0" prefWidth="600.0">
