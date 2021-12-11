@@ -25,9 +25,18 @@ public class HeapPage extends Controller{
     private Heap heap = new Heap();
     private Label[] labels = new Label[]{ label0, label1, label2, label3, label4, label5, label6 };
     private Circle[] circles = new Circle[]{circle0, circle1, circle2, circle3, circle4, circle5, circle6};
-    //Utility methods
+
+    public void onAddButtonClick(){
+        int valueToAdd = Integer.parseInt(textField.getText());
+        heap.add(valueToAdd);
+        render();
+    }
+    public void onRemoveButtonClick(){
+        heap.remove();
+        render();
+    }
+    //Other essential methods
     public void render(){
-        //initialize();
         int[] elements = heap.getArray();
         for(int i = 0; i < elements.length; i++) {
             labels[i].setText(Integer.toString(elements[i]));
@@ -51,15 +60,5 @@ public class HeapPage extends Controller{
         circles[0] = circle0; circles[1] = circle1; circles[2] = circle2;
         circles[3] = circle3; circles[4] = circle4; circles[5] = circle5;
         circles[6] = circle6;
-    }
-
-    public void onAddButtonClick(){
-        int valueToAdd = Integer.parseInt(textField.getText());
-        heap.add(valueToAdd);
-        render();
-    }
-    public void onRemoveButtonClick(){
-        heap.remove();
-        render();
     }
 }

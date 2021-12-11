@@ -32,10 +32,10 @@ public class StackPage extends Controller{
     //Other essential methods
     public void initialize(){
         labels = new Label[MAX_SIZE];
-        labels[0] = label0;
-        labels[1] = label1;
-        labels[2] = label2;
-        labels[3] = label3;
-        labels[4] = label4;
+        labels[0] = label0; labels[1] = label1; labels[2] = label2;
+        labels[3] = label3; labels[4] = label4;
+    }
+    public void render(){
+
     }
 }
