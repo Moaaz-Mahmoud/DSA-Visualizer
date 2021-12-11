@@ -7,13 +7,12 @@ import java.util.Stack;
 public class StackPage extends Controller{
     //Constants
     private final int MAX_SIZE = 5;
-    //Layout components (other than labels)
+    //Layout components
     @FXML TextField textField;
     @FXML Button pushButton;
     @FXML Button popButton;
-        //Labels
-        @FXML Label label0; @FXML Label label1; @FXML Label label2;
-        @FXML Label label3; @FXML Label label4;
+    @FXML Label label0; @FXML Label label1; @FXML Label label2;
+    @FXML Label label3; @FXML Label label4;
     //Structures
     private Stack<String> stk = new Stack<>();
     private Label[] labels = { label0, label1, label2, label3, label4 };

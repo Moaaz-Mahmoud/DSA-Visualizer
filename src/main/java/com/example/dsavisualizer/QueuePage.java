@@ -15,9 +15,8 @@ public class QueuePage extends Controller{
     @FXML TextField textField;
     @FXML Button addButton;
     @FXML Button removeButton;
-        //Labels
-        @FXML Label label0; @FXML Label label1; @FXML Label label2;
-        @FXML Label label3; @FXML Label label4;
+    @FXML Label label0; @FXML Label label1; @FXML Label label2;
+    @FXML Label label3; @FXML Label label4;
     //Structures
     private Queue<String> queue = new LinkedList<>();
     private Label[] labels = {label0, label1, label2, label3, label4};
