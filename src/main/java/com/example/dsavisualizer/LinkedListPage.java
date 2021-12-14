@@ -6,7 +6,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.shape.Rectangle;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 public class LinkedListPage extends Controller{
     //Constants
@@ -24,19 +26,38 @@ public class LinkedListPage extends Controller{
     //Structures
     private Rectangle[] rectangles;
     private Label[] labels;
-    private LinkedList<String> list = new LinkedList<>();
+    private List<String> list = new LinkedList<>();
     //Controller methods
     public void onAddButtonClick(){
-
+        if(list.size() >= MAX_SIZE) return;
+        list.add(Integer.parseInt(positionField.getText()), valueField.getText());
+        render();
     }
     public void onRemoveButtonClick(){
-
+        list.remove(Integer.parseInt(positionField.getText()));
+        render();
     }
     //Other essential methods
     public void render(){
-
+        int i = 0;
+        for(var elem : list) {
+            labels[i].setText(elem);
+            rectangles[i++].setVisible(true);
+        }
+        for(; i < MAX_SIZE; i++){
+            labels[i].setText("");
+            rectangles[i].setVisible(false);
+        }
     }
     public void initialize(){
-
+        labels = new Label[MAX_SIZE];
+        labels[0] = label0; labels[1] = label1; labels[2] = label2;
+        labels[3] = label3; labels[4] = label4; labels[5] = label5;
+        rectangles = new Rectangle[MAX_SIZE];
+        rectangles[0] = rectangle0; rectangles[1] = rectangle1;
+        rectangles[2] = rectangle2; rectangles[3] = rectangle3;
+        rectangles[4] = rectangle4; rectangles[5] = rectangle5;
+        for(var rectangle : rectangles)
+            rectangle.setVisible(false);
     }
 }
