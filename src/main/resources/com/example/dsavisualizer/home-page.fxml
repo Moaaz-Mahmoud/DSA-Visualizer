@@ -34,11 +34,6 @@
                 </Pane>
                 <Pane layoutY="100.0" prefHeight="100.0" prefWidth="285.0">
                     <children>
-                        <Button fx:id="BSTBtn" layoutX="11.0" layoutY="8.0" mnemonicParsing="false" onAction="#switchToBSTPage" prefHeight="38.0" prefWidth="77.0" text="BST">
-                            <font>
-                                <Font size="11.0" />
-                            </font>
-                        </Button>
                         <Button fx:id="HeapBtn" layoutX="105.0" layoutY="8.0" mnemonicParsing="false" onAction="#switchToHeapPage" prefHeight="38.0" prefWidth="77.0" text="Heap">
                             <font>
                                 <Font size="11.0" />
