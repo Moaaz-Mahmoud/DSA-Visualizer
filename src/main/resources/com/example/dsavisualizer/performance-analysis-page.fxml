@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="631.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dsavisualizer.PerformanceAnalysisPage">
+    <children>
+        <Pane prefHeight="671.0" prefWidth="700.0">
+         <children>
+            <Pane layoutY="30.0" prefHeight="150.0" prefWidth="400.0" />
+            <Pane layoutY="180.0" prefHeight="150.0" prefWidth="400.0" />
+            <Pane layoutY="330.0" prefHeight="150.0" prefWidth="400.0" />
+            <Pane layoutY="480.0" prefHeight="150.0" prefWidth="400.0" />
+            <Pane layoutX="400.0" layoutY="92.0" prefHeight="509.0" prefWidth="296.0">
+               <children>
+                  <LineChart prefHeight="252.0" prefWidth="288.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </LineChart>
+               </children>
+            </Pane>
+         </children></Pane>
+        <Pane layoutY="630.0" prefHeight="41.0" prefWidth="700.0">
+            <children>
+                <Button layoutX="652.0" layoutY="8.0" mnemonicParsing="false" onAction="#switchToHomePage" text="Back" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

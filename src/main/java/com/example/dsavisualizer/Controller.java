@@ -41,14 +41,11 @@ public class Controller {
     public void switchToQueuePage(ActionEvent event) throws IOException{
         switchPage(event, "queue-page.fxml");
     }
-    public void switchToBSTPage(ActionEvent event) throws IOException{
-        switchPage(event, "bst-page.fxml");
-    }
     public void switchToHeapPage(ActionEvent event) throws IOException{
         switchPage(event, "heap-page.fxml");
     }
-    public void switchToHashTablePage(ActionEvent event) throws IOException{
-        switchPage(event, "hash-table-page.fxml");
+    public void switchToPerformanceAnalysisPage(ActionEvent event) throws IOException{
+        switchPage(event, "performance-analysis-page.fxml");
     }
 
     /* General
