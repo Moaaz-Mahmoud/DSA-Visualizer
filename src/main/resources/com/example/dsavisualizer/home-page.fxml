@@ -33,7 +33,7 @@
                           <Font name="Century" size="14.0" />
                       </font>
                   </Button>
-            <Button layoutX="36.0" layoutY="136.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="209.0" text="Performance Analysis">
+            <Button layoutX="36.0" layoutY="136.0" mnemonicParsing="false" onAction="#switchToPerformanceAnalysisPage" prefHeight="50.0" prefWidth="209.0" text="Performance Analysis">
                <font>
                   <Font name="Century" size="14.0" />
                </font>
