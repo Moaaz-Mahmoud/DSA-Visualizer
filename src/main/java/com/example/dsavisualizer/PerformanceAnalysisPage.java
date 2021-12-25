@@ -1,7 +1,10 @@
 package com.example.dsavisualizer;
 
 import javafx.fxml.FXML;
+import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.LineChart;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.XYChart;
 import javafx.scene.control.*;
 
 public class PerformanceAnalysisPage extends Controller{
@@ -17,15 +20,23 @@ public class PerformanceAnalysisPage extends Controller{
     //Heap
     @FXML Button heapInsertButton; @FXML Button heapRemoveButton;
     //General
+    @FXML NumberAxis plotXAxis;
+    @FXML NumberAxis plotYAxis;
     @FXML LineChart visualizationChart;
 
     //Controller methods
     //List
     public void onListInsertButtonClick(){
         System.out.println("List");
+        int[] x = new int[]{1, 2, 3};
+        int[] y = new int[]{1, 3, 2};
+        displayCurve(x, y);
     }
     public void onListRemoveButtonClick(){
         System.out.println("List");
+        int[] x = new int[]{1, 2, 3};
+        int[] y = new int[]{1, 2, 3};
+        displayCurve(x, y);
     }
     //Stack
     public void onStackInsertButtonClick(){
@@ -73,7 +84,14 @@ public class PerformanceAnalysisPage extends Controller{
     public void initialize(){
 
     }
-    public void render(){
-
+    public void displayCurve(int[] xData, int[] yData){
+        XYChart.Series series = new XYChart.Series();
+        for(int i = 0; i < Math.min(xData.length, yData.length); i++){
+            series.getData().add(
+                    new XYChart.Data(xData[i], yData[i])
+            );
+        }
+        visualizationChart.getData().clear();
+        visualizationChart.getData().add(series);
     }
 }
