@@ -41,7 +41,13 @@ public class PerformanceAnalysisPage extends Controller{
     //Stack
     public void onStackInsertButtonClick(){
         if(stackImplSpecifier.getValue().equals("Array-Based")){
-            System.out.println("Array-Based");
+            ArrayStack<Integer> arrayStack = new ArrayStack<>();
+            arrayStack.push(5); //Dummy operation for optimizations
+            for(int operationCount = 1; operationCount < (int)1e6; operationCount *= 10){
+                arrayStack = new ArrayStack<>();
+            }
+            //{1, 10, 100, ..., 1e6}
+            //{t1, t10, t100, ...,  }
         }
         else if(stackImplSpecifier.getValue().equals("Link-Based")){
             System.out.println("Link-Based");
