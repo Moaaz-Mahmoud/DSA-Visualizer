@@ -33,23 +33,23 @@
       </Pane>
       <Pane layoutY="140.0" prefHeight="220.0" prefWidth="600.0">
          <children>
-            <Label fx:id="label0" alignment="CENTER" layoutX="300.0" layoutY="180.0">
+            <Label fx:id="label0" alignment="CENTER" layoutX="280.0" layoutY="180.0">
                <font>
                   <Font size="16.0" />
                </font></Label>
-            <Label fx:id="label1" alignment="CENTER" layoutX="300.0" layoutY="150.0">
+            <Label fx:id="label1" alignment="CENTER" layoutX="280.0" layoutY="150.0">
                <font>
                   <Font size="16.0" />
                </font></Label>
-            <Label fx:id="label2" alignment="CENTER" layoutX="300.0" layoutY="120.0">
+            <Label fx:id="label2" alignment="CENTER" layoutX="280.0" layoutY="120.0">
                <font>
                   <Font size="16.0" />
                </font></Label>
-            <Label fx:id="label3" alignment="CENTER" layoutX="300.0" layoutY="90.0">
+            <Label fx:id="label3" alignment="CENTER" layoutX="280.0" layoutY="90.0">
                <font>
                   <Font size="16.0" />
                </font></Label>
-            <Label fx:id="label4" alignment="CENTER" layoutX="300.0" layoutY="60.0">
+            <Label fx:id="label4" alignment="CENTER" layoutX="280.0" layoutY="60.0">
                <font>
                   <Font size="16.0" />
                </font></Label>

@@ -21,6 +21,8 @@ public class StackPage extends Controller{
     public void onPushButtonClick(){
         if(stk.size() == MAX_SIZE) return;
         String stringToPush = textField.getText();
+        if(stringToPush.length() >= 5)
+            stringToPush = stringToPush.substring(0, 4) + "...";
         labels[stk.size()].setText(stringToPush);
         stk.push(stringToPush);
     }

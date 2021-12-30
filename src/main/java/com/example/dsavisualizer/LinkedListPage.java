@@ -29,12 +29,17 @@ public class LinkedListPage extends Controller{
     private List<String> list = new LinkedList<>();
     //Controller methods
     public void onAddButtonClick(){
-        if(list.size() >= MAX_SIZE) return;
-        list.add(Integer.parseInt(positionField.getText()), valueField.getText());
+        int position = Integer.parseInt(positionField.getText());
+        String value = valueField.getText();
+        if(value.length() > 5) value = value.substring(0, 4) + "...";
+        if(list.size() == MAX_SIZE || position > list.size()) return;
+        list.add(position, value);
         render();
     }
     public void onRemoveButtonClick(){
-        list.remove(Integer.parseInt(positionField.getText()));
+        int position = Integer.parseInt(positionField.getText());
+        if(position >= list.size()) return;
+        list.remove(position);
         render();
     }
     //Other essential methods

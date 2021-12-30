@@ -32,31 +32,31 @@
       </Pane>
       <Pane layoutY="140.0" prefHeight="240.0" prefWidth="600.0">
          <children>
-            <Label fx:id="label0" layoutX="286.0" layoutY="15.0">
+            <Label fx:id="label0" layoutX="278.0" layoutY="15.0">
                <font>
                   <Font size="16.0" />
                </font></Label>
-            <Label fx:id="label1" layoutX="186.0" layoutY="55.0">
+            <Label fx:id="label1" layoutX="178.0" layoutY="55.0">
                <font>
                   <Font size="16.0" />
                </font></Label>
-            <Label fx:id="label2" layoutX="386.0" layoutY="55.0">
+            <Label fx:id="label2" layoutX="378.0" layoutY="55.0">
                <font>
                   <Font size="16.0" />
                </font></Label>
-            <Label fx:id="label3" layoutX="136.0" layoutY="105.0">
+            <Label fx:id="label3" layoutX="128.0" layoutY="105.0">
                <font>
                   <Font size="16.0" />
                </font></Label>
-            <Label fx:id="label4" layoutX="236.0" layoutY="105.0">
+            <Label fx:id="label4" layoutX="228.0" layoutY="105.0">
                <font>
                   <Font size="16.0" />
                </font></Label>
-            <Label fx:id="label5" layoutX="336.0" layoutY="105.0">
+            <Label fx:id="label5" layoutX="328.0" layoutY="105.0">
                <font>
                   <Font size="16.0" />
                </font></Label>
-            <Label fx:id="label6" layoutX="436.0" layoutY="105.0">
+            <Label fx:id="label6" layoutX="428.0" layoutY="105.0">
                <font>
                   <Font size="16.0" />
                </font></Label>

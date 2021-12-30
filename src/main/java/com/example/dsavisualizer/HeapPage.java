@@ -28,6 +28,7 @@ public class HeapPage extends Controller{
 
     public void onAddButtonClick(){
         int valueToAdd = Integer.parseInt(textField.getText());
+        if(Math.abs(valueToAdd) > 999) return;
         heap.add(valueToAdd);
         render();
     }
