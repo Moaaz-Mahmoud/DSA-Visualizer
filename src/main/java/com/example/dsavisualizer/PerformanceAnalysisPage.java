@@ -26,18 +26,8 @@ public class PerformanceAnalysisPage extends Controller{
 
     //Controller methods
     //List
-    public void onListInsertButtonClick(){
-        System.out.println("List");
-        long[] x = new long[]{1, 2, 3};
-        long[] y = new long[]{1, 3, 2};
-        displayCurve(y);
-    }
-    public void onListRemoveButtonClick(){
-        System.out.println("List");
-        long[] x = new long[]{1, 2, 3};
-        long[] y = new long[]{1, 2, 3};
-        displayCurve(y);
-    }
+    public void onListInsertButtonClick() { }
+    public void onListRemoveButtonClick() { }
     //Stack
     public void onStackInsertButtonClick(){
         if(stackImplSpecifier.getValue().equals("Array-Based")){
@@ -116,26 +106,113 @@ public class PerformanceAnalysisPage extends Controller{
     //Queue
     public void onQueueInsertButtonClick(){
         if(queueImplSpecifier.getValue().equals("Array-Based")){
-            System.out.println("Array-Based");
+            ArrayQueue<Integer> arrayQueue = new ArrayQueue<>();
+            long[] times = new long[8];
+            arrayQueue.add(5); //Dummy operation for optimizations
+            long startTime, endTime;
+            for(int operationCount = 1, pass = 0; operationCount <= (int)1e7; operationCount *= 10, pass++){
+                arrayQueue = new ArrayQueue<>();
+                startTime = System.nanoTime();
+                for(int operationNumber = 0; operationNumber < operationCount; operationNumber++){
+                    arrayQueue.add(operationNumber);
+                }
+                endTime = System.nanoTime();
+                times[pass] = endTime-startTime;
+            }
+            displayCurve(times);
         }
         else if(queueImplSpecifier.getValue().equals("Link-Based")){
-            System.out.println("Link-Based");
+            LinkedQueue<Integer> linkedQueue = new LinkedQueue<>();
+            long[] times = new long[8];
+            linkedQueue.add(5); //Dummy operation for optimizations
+            long startTime, endTime;
+            for(int operationCount = 1, pass = 0; operationCount <= (int)1e7; operationCount *= 10, pass++){
+                linkedQueue = new LinkedQueue<>();
+                startTime = System.nanoTime();
+                for(int operationNumber = 0; operationNumber < operationCount; operationNumber++){
+                    linkedQueue.add(operationNumber);
+                }
+                endTime = System.nanoTime();
+                times[pass] = endTime-startTime;
+            }
+            displayCurve(times);
         }
     }
     public void onQueueRemoveButtonClick(){
         if(queueImplSpecifier.getValue().equals("Array-Based")){
-            System.out.println("Array-Based");
+            ArrayQueue<Integer> arrayQueue = new ArrayQueue<>();
+            long[] times = new long[8];
+            arrayQueue.add(5); //Dummy operation for optimizations
+            long startTime, endTime;
+            for(int operationCount = 1, pass = 0; operationCount <= (int)1e7; operationCount *= 10, pass++){
+                arrayQueue = new ArrayQueue<>();
+                for(int operationNumber = 0; operationNumber < operationCount; operationNumber++){
+                    arrayQueue.add(operationNumber);
+                }
+                startTime = System.nanoTime();
+                for(int operationNumber = 0; operationNumber < operationCount; operationNumber++){
+                    arrayQueue.remove();
+                }
+                endTime = System.nanoTime();
+                times[pass] = endTime-startTime;
+            }
+            displayCurve(times);
         }
         else if(queueImplSpecifier.getValue().equals("Link-Based")){
-            System.out.println("Link-Based");
+            LinkedQueue<Integer> linkedQueue = new LinkedQueue<>();
+            long[] times = new long[8];
+            linkedQueue.add(5); //Dummy operation for optimizations
+            long startTime, endTime;
+            for(int operationCount = 1, pass = 0; operationCount <= (int)1e7; operationCount *= 10, pass++){
+                linkedQueue = new LinkedQueue<>();
+                for(int operationNumber = 0; operationNumber < operationCount; operationNumber++){
+                    linkedQueue.add(operationNumber);
+                }
+                startTime = System.nanoTime();
+                for(int operationNumber = 0; operationNumber < operationCount; operationNumber++){
+                    linkedQueue.remove();
+                }
+                endTime = System.nanoTime();
+                times[pass] = endTime-startTime;
+            }
+            displayCurve(times);
         }
     }
     //Heap
     public void onHeapInsertButtonClick(){
-        System.out.println("Heap");
+        Heap heap = new Heap();
+        long[] times = new long[8];
+        heap.add(5); //Dummy operation for optimizations
+        long startTime, endTime;
+        for(int operationCount = 1, pass = 0; operationCount <= (int)1e7; operationCount *= 10, pass++){
+            heap = new Heap();
+            startTime = System.nanoTime();
+            for(int operationNumber = 0; operationNumber < operationCount; operationNumber++){
+                heap.add(operationNumber);
+            }
+            endTime = System.nanoTime();
+            times[pass] = endTime-startTime;
+        }
+        displayCurve(times);
     }
     public void onHeapRemoveButtonClick(){
-        System.out.println("Heap");
+        Heap heap = new Heap();
+        long[] times = new long[8];
+        heap.add(5); //Dummy operation for optimizations
+        long startTime, endTime;
+        for(int operationCount = 1, pass = 0; operationCount <= (int)1e7; operationCount *= 10, pass++){
+            heap = new Heap();
+            startTime = System.nanoTime();
+            for(int operationNumber = 0; operationNumber < operationCount; operationNumber++){
+                heap.add(operationNumber);
+            }
+            for(int operationNumber = 0; operationNumber < operationCount; operationNumber++){
+                heap.remove();
+            }
+            endTime = System.nanoTime();
+            times[pass] = endTime-startTime;
+        }
+        displayCurve(times);
     }
 
     //Other essential methods
