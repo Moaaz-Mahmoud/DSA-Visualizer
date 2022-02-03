@@ -3,6 +3,7 @@ module com.example.dsavisualizer {
     requires javafx.fxml;
 
     requires org.kordamp.bootstrapfx.core;
+    requires javafx.graphics;
 
     opens com.example.dsavisualizer to javafx.fxml;
     exports com.example.dsavisualizer;

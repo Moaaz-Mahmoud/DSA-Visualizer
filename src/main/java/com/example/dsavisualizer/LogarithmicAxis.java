@@ -80,9 +80,9 @@ public class LogarithmicAxis extends ValueAxis<Number> {
      * Validate the bounds by throwing an exception if the values are not conform to the mathematics log interval:
      * ]0,Double.MAX_VALUE]
      *
-     * @param lowerBound
-     * @param upperBound
-     * @throws Exception
+     * @param lowerBound -
+     * @param upperBound -
+     * @throws Exception -
      */
     private void validateBounds(double lowerBound, double upperBound) throws Exception {
         if (lowerBound < 0 || upperBound < 0 || lowerBound > upperBound) {
