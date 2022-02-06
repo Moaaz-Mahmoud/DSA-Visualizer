@@ -42,8 +42,8 @@
                                 </FXCollections>
                             </items>
                         </ComboBox>
-                        <Button id="stackInsertButton" layoutX="14.0" layoutY="62.0" mnemonicParsing="false" onAction="#onStackInsertButtonClick" prefHeight="25.0" prefWidth="166.0" text="Insertion" />
-                        <Button id="stackRemoveButton" layoutX="200.0" layoutY="62.0" mnemonicParsing="false" onAction="#onStackRemoveButtonClick" prefHeight="25.0" prefWidth="165.0" text="Removal" />
+                        <Button id="stackInsertButton" layoutX="14.0" layoutY="62.0" mnemonicParsing="false" onAction="#onStackInsertButtonClick" prefHeight="25.0" prefWidth="166.0" text="Insertion" styleClass="performance-btn-style" stylesheets="@component-styles.css"/>
+                        <Button id="stackRemoveButton" layoutX="200.0" layoutY="62.0" mnemonicParsing="false" onAction="#onStackRemoveButtonClick" prefHeight="25.0" prefWidth="165.0" text="Removal" styleClass="performance-btn-style" stylesheets="@component-styles.css"/>
                     </children></Pane>
                 <Pane layoutY="180.0" prefHeight="150.0" prefWidth="400.0">
                     <children>
@@ -60,8 +60,8 @@
                                 </FXCollections>
                             </items>
                         </ComboBox>
-                        <Button id="queueInsertButton" layoutX="14.0" layoutY="62.0" mnemonicParsing="false" onAction="#onQueueInsertButtonClick" prefHeight="25.0" prefWidth="166.0" text="Insertion" />
-                        <Button id="queueRemoveButton" layoutX="200.0" layoutY="62.0" mnemonicParsing="false" onAction="#onQueueRemoveButtonClick" prefHeight="25.0" prefWidth="165.0" text="Removal" />
+                        <Button id="queueInsertButton" layoutX="14.0" layoutY="62.0" mnemonicParsing="false" onAction="#onQueueInsertButtonClick" prefHeight="25.0" prefWidth="166.0" text="Insertion" styleClass="performance-btn-style" stylesheets="@component-styles.css"/>
+                        <Button id="queueRemoveButton" layoutX="200.0" layoutY="62.0" mnemonicParsing="false" onAction="#onQueueRemoveButtonClick" prefHeight="25.0" prefWidth="165.0" text="Removal" styleClass="performance-btn-style" stylesheets="@component-styles.css"/>
                     </children></Pane>
                 <Pane layoutY="330.0" prefHeight="150.0" prefWidth="400.0">
                     <children>
@@ -70,8 +70,8 @@
                                 <Font name="Georgia Bold Italic" size="14.0" />
                             </font>
                         </Label>
-                        <Button id="heapInsertButton" layoutX="14.0" layoutY="62.0" mnemonicParsing="false" onAction="#onHeapInsertButtonClick" prefHeight="25.0" prefWidth="166.0" text="Insertion" />
-                        <Button id="heapRemoveButton" layoutX="200.0" layoutY="62.0" mnemonicParsing="false" onAction="#onHeapRemoveButtonClick" prefHeight="25.0" prefWidth="165.0" text="Removal" />
+                        <Button id="heapInsertButton" layoutX="14.0" layoutY="62.0" mnemonicParsing="false" onAction="#onHeapInsertButtonClick" prefHeight="25.0" prefWidth="166.0" text="Insertion" styleClass="performance-btn-style" stylesheets="@component-styles.css"/>
+                        <Button id="heapRemoveButton" layoutX="200.0" layoutY="62.0" mnemonicParsing="false" onAction="#onHeapRemoveButtonClick" prefHeight="25.0" prefWidth="165.0" text="Removal" styleClass="performance-btn-style" stylesheets="@component-styles.css"/>
                     </children></Pane>
                 <Pane layoutX="400.0" layoutY="92.0" prefHeight="509.0" prefWidth="446.0">
                     <children>
