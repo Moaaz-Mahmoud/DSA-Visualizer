@@ -70,3 +70,27 @@
     -fx-text-fill: black;
     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
 }
+.performance-btn-style:hover {
+    -fx-background-color:
+            #c3c4c4,
+            linear-gradient(#cbcaca 50%, #e8e5e5 100%),
+            radial-gradient(center 50% -40%, radius 200%, #e3dfdf 45%, rgba(224, 218, 218, 0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+.performance-btn-style:pressed {
+    -fx-background-color:
+            #c3c4c4,
+            linear-gradient(#c5c5c5 50%, #e0dfdf 100%),
+            radial-gradient(center 50% -40%, radius 200%, #dadada 45%, rgba(222, 214, 214, 0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+.performance-btn-style Text {
+    -fx-fill: white;
+    -fx-effect: dropshadow( gaussian , #a30000 , 0,0,0,2 );
+}
