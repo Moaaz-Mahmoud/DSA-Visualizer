@@ -88,10 +88,11 @@
                                 <LogarithmicAxis fx:id="plotYAxis" side="LEFT" />
                             </yAxis>
                         </LineChart>
+                        <Button fx:id="exportCSVButton" layoutX="150" layoutY="460" text="Export to CSV" onAction="#onExportCSVButtonClick" styleClass="performance-btn-style" stylesheets="@component-styles.css"/>
                     </children>
                 </Pane>
             </children></Pane>
-        <Pane layoutY="550.0" prefHeight="41.0" prefWidth="850.0">
+        <Pane layoutY="560.0" prefHeight="41.0" prefWidth="850.0">
             <children>
                 <Button layoutX="782.0" layoutY="8.0" mnemonicParsing="false" onAction="#switchToHomePage" text="Back" />
             </children>

@@ -7,6 +7,10 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.*;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+
 public class PerformanceAnalysisPage extends Controller{
     //Controls
     //List
@@ -24,11 +28,11 @@ public class PerformanceAnalysisPage extends Controller{
     @FXML LogarithmicAxis plotYAxis;
     @FXML LineChart visualizationChart;
     @FXML Label ImplementationSpecifierAlert;
+    @FXML Button exportCSVButton;
+
+    private XYChart.Series series;
 
     //Controller methods
-    //List
-    public void onListInsertButtonClick() { }
-    public void onListRemoveButtonClick() { }
     //Stack
     public void onStackInsertButtonClick(){
         if(stackImplSpecifier.getValue() == null){
@@ -236,13 +240,30 @@ public class PerformanceAnalysisPage extends Controller{
         displayCurve(times);
     }
 
+    //Export to CSV
+    public void onExportCSVButtonClick() throws IOException {
+        if(!visualizationChart.getData().isEmpty()){
+//            CSVIO.writeCSV(visualizationChart.getData());
+            ArrayList<String[]> contentToWrite = new ArrayList<>();
+            for(var entry : series.getData()){
+                var row = entry.toString();
+                row = row.substring(5, row.length()-6);
+                contentToWrite.add(row.split(","));
+            }
+            CSVIO.writeCSV(contentToWrite, "results.csv");
+        }
+        else{
+            ImplementationSpecifierAlert.setText("Please make a plot first!");
+        }
+    }
+
     //Other essential methods
     public void initialize(){
 
     }
     public void displayCurve(long[] yData){
         long[] xData = new long[]{1, 10, 100, 1000, 10000, 100000, 1000000};
-        XYChart.Series series = new XYChart.Series();
+        series = new XYChart.Series();
         for(int i = 0; i < Math.min(xData.length, yData.length); i++){
             series.getData().add(
                     new XYChart.Data(xData[i], yData[i])
