@@ -45,10 +45,10 @@
 }
 .internal-structure-btn-style:hover {
     -fx-background-color:
-            linear-gradient(from 0% 93% to 0% 100%, #58b4dc 0%, #126a90 100%),
-            #24879d,
-            #3aaed8,
-            radial-gradient(center 50% 50%, radius 100%, #4bd2ea, #2c85c5);
+            linear-gradient(from 0% 93% to 0% 100%, #5bb1d9 0%, #187da6 100%),
+            #24679d,
+            #3290b2,
+            radial-gradient(center 50% 50%, radius 100%, #3dabbe, #2c85c5);
 }
 .internal-structure-btn-style:pressed {
     -fx-padding: 10 15 13 15;

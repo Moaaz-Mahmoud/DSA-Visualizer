@@ -23,6 +23,7 @@ public class PerformanceAnalysisPage extends Controller{
     @FXML LogarithmicAxis plotXAxis;
     @FXML LogarithmicAxis plotYAxis;
     @FXML LineChart visualizationChart;
+    @FXML Label ImplementationSpecifierAlert;
 
     //Controller methods
     //List
@@ -30,7 +31,10 @@ public class PerformanceAnalysisPage extends Controller{
     public void onListRemoveButtonClick() { }
     //Stack
     public void onStackInsertButtonClick(){
-        if(stackImplSpecifier.getValue().equals("Array-Based")){
+        if(stackImplSpecifier.getValue() == null){
+            ImplementationSpecifierAlert.setText("Please specify an implementation!");
+        }
+        else if(stackImplSpecifier.getValue().equals("Array-Based")){
             ArrayStack<Integer> arrayStack = new ArrayStack<>();
             long[] times = new long[8];
             arrayStack.push(5); //Dummy operation for optimizations
@@ -44,6 +48,7 @@ public class PerformanceAnalysisPage extends Controller{
                 endTime = System.nanoTime();
                 times[pass] = endTime-startTime;
             }
+            ImplementationSpecifierAlert.setText("");
             displayCurve(times);
         }
         else if(stackImplSpecifier.getValue().equals("Link-Based")){
@@ -60,11 +65,15 @@ public class PerformanceAnalysisPage extends Controller{
                 endTime = System.nanoTime();
                 times[pass] = endTime-startTime;
             }
+            ImplementationSpecifierAlert.setText("");
             displayCurve(times);
         }
     }
     public void onStackRemoveButtonClick(){
-        if(stackImplSpecifier.getValue().equals("Array-Based")){
+        if(stackImplSpecifier.getValue() == null){
+            ImplementationSpecifierAlert.setText("Please specify an implementation!");
+        }
+        else if(stackImplSpecifier.getValue().equals("Array-Based")){
             ArrayStack<Integer> arrayStack = new ArrayStack<>();
             long[] times = new long[8];
             arrayStack.push(5); //Dummy operation for optimizations
@@ -81,6 +90,7 @@ public class PerformanceAnalysisPage extends Controller{
                 endTime = System.nanoTime();
                 times[pass] = endTime-startTime;
             }
+            ImplementationSpecifierAlert.setText("");
             displayCurve(times);
         }
         else if(stackImplSpecifier.getValue().equals("Link-Based")){
@@ -100,46 +110,55 @@ public class PerformanceAnalysisPage extends Controller{
                 endTime = System.nanoTime();
                 times[pass] = endTime-startTime;
             }
+            ImplementationSpecifierAlert.setText("");
             displayCurve(times);
         }
     }
     //Queue
     public void onQueueInsertButtonClick(){
-        if(queueImplSpecifier.getValue().equals("Array-Based")){
+        if(queueImplSpecifier.getValue() == null){
+            ImplementationSpecifierAlert.setText("Please specify an implementation!");
+        }
+        else if (queueImplSpecifier.getValue().equals("Array-Based")) {
             ArrayQueue<Integer> arrayQueue = new ArrayQueue<>();
             long[] times = new long[8];
             arrayQueue.add(5); //Dummy operation for optimizations
             long startTime, endTime;
-            for(int operationCount = 1, pass = 0; operationCount <= (int)1e7; operationCount *= 10, pass++){
+            for (int operationCount = 1, pass = 0; operationCount <= (int) 1e7; operationCount *= 10, pass++) {
                 arrayQueue = new ArrayQueue<>();
                 startTime = System.nanoTime();
-                for(int operationNumber = 0; operationNumber < operationCount; operationNumber++){
+                for (int operationNumber = 0; operationNumber < operationCount; operationNumber++) {
                     arrayQueue.add(operationNumber);
                 }
                 endTime = System.nanoTime();
-                times[pass] = endTime-startTime;
+                times[pass] = endTime - startTime;
             }
+            ImplementationSpecifierAlert.setText("");
             displayCurve(times);
-        }
-        else if(queueImplSpecifier.getValue().equals("Link-Based")){
+        } else if (queueImplSpecifier.getValue().equals("Link-Based")) {
             LinkedQueue<Integer> linkedQueue = new LinkedQueue<>();
             long[] times = new long[8];
             linkedQueue.add(5); //Dummy operation for optimizations
             long startTime, endTime;
-            for(int operationCount = 1, pass = 0; operationCount <= (int)1e7; operationCount *= 10, pass++){
+            for (int operationCount = 1, pass = 0; operationCount <= (int) 1e7; operationCount *= 10, pass++) {
                 linkedQueue = new LinkedQueue<>();
                 startTime = System.nanoTime();
-                for(int operationNumber = 0; operationNumber < operationCount; operationNumber++){
+                for (int operationNumber = 0; operationNumber < operationCount; operationNumber++) {
                     linkedQueue.add(operationNumber);
                 }
                 endTime = System.nanoTime();
-                times[pass] = endTime-startTime;
+                times[pass] = endTime - startTime;
             }
+            ImplementationSpecifierAlert.setText("");
             displayCurve(times);
         }
+
     }
     public void onQueueRemoveButtonClick(){
-        if(queueImplSpecifier.getValue().equals("Array-Based")){
+        if(queueImplSpecifier.getValue() == null){
+            ImplementationSpecifierAlert.setText("Please specify an implementation!");
+        }
+        else if(queueImplSpecifier.getValue().equals("Array-Based")){
             ArrayQueue<Integer> arrayQueue = new ArrayQueue<>();
             long[] times = new long[8];
             arrayQueue.add(5); //Dummy operation for optimizations
@@ -156,6 +175,7 @@ public class PerformanceAnalysisPage extends Controller{
                 endTime = System.nanoTime();
                 times[pass] = endTime-startTime;
             }
+            ImplementationSpecifierAlert.setText("");
             displayCurve(times);
         }
         else if(queueImplSpecifier.getValue().equals("Link-Based")){
@@ -175,6 +195,7 @@ public class PerformanceAnalysisPage extends Controller{
                 endTime = System.nanoTime();
                 times[pass] = endTime-startTime;
             }
+            ImplementationSpecifierAlert.setText("");
             displayCurve(times);
         }
     }
