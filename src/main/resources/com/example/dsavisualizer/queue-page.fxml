@@ -21,11 +21,11 @@
                <font>
                   <Font size="16.0" />
                </font></Label>
-            <Button fx:id="addButton" layoutX="120.0" layoutY="47.0" mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="58.0" prefWidth="140.0" text="Add" styleClass="internal-structure-btn-style" stylesheets="@component-styles.css">
+            <Button fx:id="addButton" layoutX="120.0" layoutY="47.0" mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="58.0" prefWidth="140.0" text="Add" styleClass="internal-structure-btn-style" stylesheets="@button-styles.css">
                <font>
                   <Font size="16.0" />
                </font></Button>
-            <Button fx:id="removeButton" layoutX="300.0" layoutY="47.0" mnemonicParsing="false" onAction="#onRemoveButtonClick" prefHeight="58.0" prefWidth="140.0" text="Remove" styleClass="internal-structure-btn-style" stylesheets="@component-styles.css">
+            <Button fx:id="removeButton" layoutX="300.0" layoutY="47.0" mnemonicParsing="false" onAction="#onRemoveButtonClick" prefHeight="58.0" prefWidth="140.0" text="Remove" styleClass="internal-structure-btn-style" stylesheets="@button-styles.css">
                <font>
                   <Font size="16.0" />
                </font></Button>

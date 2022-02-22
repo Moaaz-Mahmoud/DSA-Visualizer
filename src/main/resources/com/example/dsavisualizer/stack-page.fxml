@@ -21,11 +21,11 @@
                <font>
                   <Font size="16.0" />
                </font></Label>
-            <Button fx:id="pushButton" layoutX="120.0" layoutY="47.0" mnemonicParsing="false" onAction="#onPushButtonClick" prefHeight="58.0" prefWidth="140.0" text="Push" styleClass="internal-structure-btn-style" stylesheets="@component-styles.css">
+            <Button fx:id="pushButton" layoutX="120.0" layoutY="47.0" mnemonicParsing="false" onAction="#onPushButtonClick" prefHeight="58.0" prefWidth="140.0" text="Push" styleClass="internal-structure-btn-style" stylesheets="@button-styles.css">
                <font>
                   <Font size="16.0" />
                </font></Button>
-            <Button fx:id="popButton" layoutX="300.0" layoutY="47.0" mnemonicParsing="false" onAction="#onPopButtonClick" prefHeight="58.0" prefWidth="140.0" text="Pop" styleClass="internal-structure-btn-style" stylesheets="@component-styles.css">
+            <Button fx:id="popButton" layoutX="300.0" layoutY="47.0" mnemonicParsing="false" onAction="#onPopButtonClick" prefHeight="58.0" prefWidth="140.0" text="Pop" styleClass="internal-structure-btn-style" stylesheets="@button-styles.css">
                <font>
                   <Font size="16.0" />
                </font></Button>

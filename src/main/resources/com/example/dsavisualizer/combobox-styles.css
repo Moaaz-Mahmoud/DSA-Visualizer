@@ -1,0 +1,17 @@
+.combo-box{
+    -fx-background-color: rgb(182, 197, 239);
+}
+
+.combo-box:hover{
+    -fx-background-color: rgb(161, 182, 243);
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: rgb(182, 197, 239);
+    -fx-text-fill: #000000;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: rgb(161, 182, 243);
+    -fx-text-fill: #000000;
+}

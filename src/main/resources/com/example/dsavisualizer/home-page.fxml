@@ -13,27 +13,27 @@
     <children>
         <Pane prefHeight="200.0" prefWidth="200.0">
             <children>
-                  <Button fx:id="LinkedListBtn" layoutX="35.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToLinkedListPage" prefHeight="50.0" prefWidth="100.0" text="Linked List" styleClass="home-btn-style" stylesheets="@component-styles.css">
+                  <Button fx:id="LinkedListBtn" layoutX="35.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToLinkedListPage" prefHeight="50.0" prefWidth="100.0" text="Linked List" styleClass="home-btn-style" stylesheets="@button-styles.css">
                       <font>
                           <Font name="Century" size="14.0" />
                       </font>
                   </Button>
-                  <Button fx:id="StackBtn" layoutX="144.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToStackPage" prefHeight="50.0" prefWidth="100.0" text="Stack" styleClass="home-btn-style" stylesheets="@component-styles.css">
+                  <Button fx:id="StackBtn" layoutX="144.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToStackPage" prefHeight="50.0" prefWidth="100.0" text="Stack" styleClass="home-btn-style" stylesheets="@button-styles.css">
                       <font>
                           <Font name="Century" size="14.0" />
                       </font>
                   </Button>
-                  <Button fx:id="QueueBtn" layoutX="35.0" layoutY="75.0" mnemonicParsing="false" onAction="#switchToQueuePage" prefHeight="50.0" prefWidth="100.0" text="Queue" styleClass="home-btn-style" stylesheets="@component-styles.css">
+                  <Button fx:id="QueueBtn" layoutX="35.0" layoutY="75.0" mnemonicParsing="false" onAction="#switchToQueuePage" prefHeight="50.0" prefWidth="100.0" text="Queue" styleClass="home-btn-style" stylesheets="@button-styles.css">
                       <font>
                           <Font name="Century" size="14.0" />
                       </font>
                   </Button>
-                  <Button fx:id="HeapBtn" layoutX="144.0" layoutY="75.0" mnemonicParsing="false" onAction="#switchToHeapPage" prefHeight="50.0" prefWidth="100.0" text="Heap" styleClass="home-btn-style" stylesheets="@component-styles.css">
+                  <Button fx:id="HeapBtn" layoutX="144.0" layoutY="75.0" mnemonicParsing="false" onAction="#switchToHeapPage" prefHeight="50.0" prefWidth="100.0" text="Heap" styleClass="home-btn-style" stylesheets="@button-styles.css">
                       <font>
                           <Font name="Century" size="14.0" />
                       </font>
                   </Button>
-            <Button layoutX="36.0" layoutY="136.0" mnemonicParsing="false" onAction="#switchToPerformanceAnalysisPage" prefHeight="50.0" prefWidth="209.0" text="Performance Analysis" styleClass="home-btn-style" stylesheets="@component-styles.css">
+            <Button layoutX="36.0" layoutY="136.0" mnemonicParsing="false" onAction="#switchToPerformanceAnalysisPage" prefHeight="50.0" prefWidth="209.0" text="Performance Analysis" styleClass="home-btn-style" stylesheets="@button-styles.css">
                <font>
                   <Font name="Century" size="14.0" />
                </font>

@@ -14,8 +14,8 @@
             <Label layoutX="15.0" layoutY="74.0" text="Position" />
             <TextField fx:id="valueField" layoutX="14.0" layoutY="34.0" prefHeight="25.0" prefWidth="81.0" />
             <TextField fx:id="positionField" layoutX="14.0" layoutY="94.0" prefHeight="25.0" prefWidth="81.0" />
-            <Button fx:id="addButton" layoutX="122.0" layoutY="14.0" mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="105.0" prefWidth="210.0" text="Add" styleClass="internal-structure-btn-style" stylesheets="@component-styles.css"/>
-            <Button fx:id="removeButton" layoutX="343.0" layoutY="14.0" mnemonicParsing="false" onAction="#onRemoveButtonClick" prefHeight="105.0" prefWidth="210.0" text="Remove" styleClass="internal-structure-btn-style" stylesheets="@component-styles.css"/>
+            <Button fx:id="addButton" layoutX="122.0" layoutY="14.0" mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="105.0" prefWidth="210.0" text="Add" styleClass="internal-structure-btn-style" stylesheets="@button-styles.css"/>
+            <Button fx:id="removeButton" layoutX="343.0" layoutY="14.0" mnemonicParsing="false" onAction="#onRemoveButtonClick" prefHeight="105.0" prefWidth="210.0" text="Remove" styleClass="internal-structure-btn-style" stylesheets="@button-styles.css"/>
          </children>
       </Pane>
       <Pane layoutY="140.0" prefHeight="160.0" prefWidth="600.0">
